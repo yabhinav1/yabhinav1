@@ -113,9 +113,9 @@ built-in `node:sqlite`, no build step, two runtime dependencies.
 
 | | |
 |---|---|
-| **Frontend** | Next.js · React · TypeScript · Tailwind · Framer Motion |
-| **Backend** | Node · Express · MongoDB · SQLite · discord.js |
-| **Infra** | Vercel · Cloudflare · Fly.io · OAuth2 · sharding |
+| **Frontend** | Next.js · React · TypeScript · Tailwind · Framer Motion · HTML/CSS · Chart.js |
+| **Backend** | Node · Express · Python · FastAPI · MongoDB · SQLite · Turso · discord.js · Hugging Face |
+| **Infra** | AWS · Oracle Cloud · Vultr · Vercel · Fly.io · Cloudflare · Docker · Linux VPS · DNS · OAuth2 · sharding |
 
 ---
 
