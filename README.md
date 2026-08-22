@@ -45,14 +45,45 @@ libuv read them at process start, before dotenv ever runs.
 
 </details>
 
-### DailyOS · [dailyos.dpdns.org](https://dailyos.dpdns.org)
+### DailyOS · [dailyos.dpdns.org](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos)
 
 A personal productivity OS — notes with folders, tasks, projects, calendar,
 habits, goals, analytics, study mode, focus timer, doodle canvas, and a developer
-mode. Eleven modules sharing one data model, so a task can come from a note and a
-habit can roll into a goal without an integration in between.
+mode. Eleven modules over **34 Prisma models in one schema**, so a task can come
+from a note and a habit can roll into a goal without an integration in between.
 
-Next.js, deployed on Vercel behind Cloudflare.
+Notes carry three editing modes on one record: rich text, a sketch pad, and a
+freeform canvas you double-click to drop text onto. File bytes live in MongoDB
+GridFS rather than Postgres, so a large PDF isn't sitting in a row that gets read
+on every page load.
+
+Next.js 16, Prisma, Neon, Auth.js v5. Vercel behind Cloudflare.
+
+<details>
+<summary><b>The bug I'm most proud of fixing</b></summary>
+
+<br>
+
+Uploading a profile picture signed you out, and everything afterwards crawled.
+The two symptoms looked unrelated and had one cause.
+
+An uploaded avatar was stored as a data URL — up to two megabytes — and handed
+to `updateSession`, which put it on the session token. That token is serialised
+into a cookie, and a cookie holds about four kilobytes. Auth.js does not fail on
+that; it *splits* the token across numbered chunks — `authjs.session-token.0`,
+`.1`, `.2` — so every subsequent request carried megabytes of cookie. That was
+the slowness.
+
+The sign-out was the proxy: it looked for the session cookie by exact name, so
+the moment the token was chunked there was no cookie by that name, and a
+signed-in user looked signed out.
+
+Matching the chunk prefix fixes the symptom. The actual fix was keeping the
+bytes out of the token at all — the jwt callback reads the avatar from the
+database and puts a URL on the token, and the image is served from a route. No
+future caller can reintroduce it by passing an image either.
+
+</details>
 
 ### The Silent Co-Driver · [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing)
 
