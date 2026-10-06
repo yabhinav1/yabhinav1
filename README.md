@@ -1,16 +1,29 @@
 ## Abhinav
 
 Full-stack developer in Delhi. First-year CSE at JIMS Greater Noida (GGSIPU).
+Self-taught. Everything below runs in production, and I'm the one who keeps it
+running, which is where most of what I know came from. The one team build is
+marked.
 
-Self-taught — no internships. Everything below I built alone and then had to
-keep running, which is where most of what I know came from. The one team build
-is marked.
+[Portfolio](https://yabhinav.dpdns.org) · [Email](mailto:yabhinav0011@gmail.com) · Open to internships and freelance work
+
+**Now:** building out DailyOS, keeping Annie's shards healthy, and looking for a
+first internship.
+
+| | | |
+|---|---|---|
+| **Annie** | Discord bot that replaces six single-purpose bots. 417 commands, sharded, with a Next.js dashboard. | [annie.monster](https://annie.monster) |
+| **DailyOS** | Personal productivity OS. Eleven modules over one Prisma schema. | [live](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos) |
+| **The Silent Co-Driver** | Scores driver stress from F1 team radio. 3rd place, AI Race Month. | [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing) |
 
 ---
 
 ### Annie · [annie.monster](https://annie.monster)
 
-An all-in-one Discord bot that replaces the six single-purpose bots most servers
+<!-- screenshot slot: drop assets/annie-dashboard.png in this repo and replace this comment with
+<img src="assets/annie-dashboard.png" alt="Annie's dashboard" width="800"> -->
+
+Closed source. An all-in-one Discord bot that replaces the six single-purpose bots most servers
 end up running — economy, moderation, music, games, social, community tools.
 
 **417 commands** (313 prefix + 104 slash) across 23 categories · 29 event
@@ -46,6 +59,8 @@ libuv read them at process start, before dotenv ever runs.
 </details>
 
 ### DailyOS · [dailyos.dpdns.org](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos)
+
+<!-- screenshot slot: assets/dailyos-notes.png -->
 
 A personal productivity OS — notes with folders, tasks, projects, calendar,
 habits, goals, analytics, study mode, focus timer, doodle canvas, and a developer
@@ -88,6 +103,8 @@ future caller can reintroduce it by passing an image either.
 ### The Silent Co-Driver · [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing)
 
 **3rd place, AI Race Month · GrandPrix** — two-person team, built in a day.
+
+<!-- screenshot slot: assets/co-driver-chart.png -->
 
 A pit wall watches tyre temps, fuel and sector deltas. Nobody has time to
 process the one channel that carries fatigue first: the driver's own voice. This
@@ -133,9 +150,9 @@ loading the session telemetry and using the real `LapStartDate` fixed it.
 
 </details>
 
-### Portfolio · [source](https://github.com/yabhinav1/portfolio)
+### Portfolio · [yabhinav.dpdns.org](https://yabhinav.dpdns.org) · [source](https://github.com/yabhinav1/portfolio)
 
-This one's public. Server-rendered Node with a `/admin` panel, SQLite via Node's
+Server-rendered Node with a `/admin` panel, SQLite via Node's
 built-in `node:sqlite`, no build step, two runtime dependencies.
 
 ---
@@ -150,12 +167,12 @@ built-in `node:sqlite`, no build step, two runtime dependencies.
 
 ---
 
-Open to internships and freelance work — [yabhinav0011@gmail.com](mailto:yabhinav0011@gmail.com)
-
----
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yabhinav1/yabhinav1/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yabhinav1/yabhinav1/output/github-snake.svg" />
   <img alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/yabhinav1/yabhinav1/output/github-snake.svg" />
 </picture>
+
+---
+
+Open to internships and freelance work — [yabhinav0011@gmail.com](mailto:yabhinav0011@gmail.com)
