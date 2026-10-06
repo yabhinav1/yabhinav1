@@ -20,8 +20,7 @@ first internship.
 
 ### Annie · [annie.monster](https://annie.monster)
 
-<!-- screenshot slot: drop assets/annie-dashboard.png in this repo and replace this comment with
-<img src="assets/annie-dashboard.png" alt="Annie's dashboard" width="800"> -->
+<img src="assets/annie-dashboard.png" alt="Annie's dashboard" width="800">
 
 Closed source. An all-in-one Discord bot that replaces the six single-purpose bots most servers
 end up running — economy, moderation, music, games, social, community tools.
@@ -60,7 +59,7 @@ libuv read them at process start, before dotenv ever runs.
 
 ### DailyOS · [dailyos.dpdns.org](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos)
 
-<!-- screenshot slot: assets/dailyos-notes.png -->
+<img src="assets/dailyos-notes.png" alt="DailyOS notes canvas" width="800">
 
 A personal productivity OS — notes with folders, tasks, projects, calendar,
 habits, goals, analytics, study mode, focus timer, doodle canvas, and a developer
@@ -104,7 +103,7 @@ future caller can reintroduce it by passing an image either.
 
 **3rd place, AI Race Month · GrandPrix** — two-person team, built in a day.
 
-<!-- screenshot slot: assets/co-driver-chart.png -->
+<img src="assets/co-driver-chart.png" alt="Driver stress score plotted against lap times" width="800">
 
 A pit wall watches tyre temps, fuel and sector deltas. Nobody has time to
 process the one channel that carries fatigue first: the driver's own voice. This
