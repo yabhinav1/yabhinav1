@@ -1,8 +1,8 @@
 ## Abhinav
 
 Full-stack developer in Delhi. I build software and then keep it running: a
-Discord bot in 480+ servers, an offline-first memory for field crews, and the
-productivity app I open every morning. CSE student at JIMS Greater Noida.
+Discord bot in 490 servers, an offline-first memory for field crews, and the
+productivity app I open every morning. CSE 1st year at GGSIPU.
 Everything below is in production, and I'm the one who keeps it there.
 
 [Portfolio](https://yabhinav.dpdns.org) · [LinkedIn](https://www.linkedin.com/in/yabhinav1) · [Email](mailto:yabhinav0011@gmail.com)
