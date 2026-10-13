@@ -22,6 +22,7 @@ Everything below is in production, and I'm the one who keeps it there.
 | **FieldMind** | Offline-first memory for field technicians on Qdrant Edge. Team build. | [source](https://github.com/yabhinav1/fieldmind) |
 | **FieldProof** | Field photos in, verified and report-ready evidence out. NGO media platform on Cloudinary. | [demo](https://fieldproof-kappa.vercel.app) · [source](https://github.com/yabhinav1/fieldproof) |
 | **The Silent Co-Driver** | Scores driver stress from F1 team radio. 3rd place, AI Race Month. Team build. | [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing) |
+| **Café de' Mercanti** | UI and UX concept for an Old Montreal café. Hand-built in HTML, CSS and JS. | [live](https://cafe-de-mercanti.vercel.app) · [source](https://github.com/yabhinav1/cafe-de-mercanti) |
 
 ---
 
@@ -195,6 +196,15 @@ Server-rendered Node with an `/admin` panel, libSQL on Turso, no build step and
 no frontend framework. Live counters from Annie, a GitHub contribution heatmap,
 a content-security policy that allows only its own two hashed scripts, and the
 badge at the top of this page.
+
+### Café de' Mercanti · [live](https://cafe-de-mercanti.vercel.app) · [source](https://github.com/yabhinav1/cafe-de-mercanti)
+
+<img src="assets/cafe-de-mercanti.webp" alt="The café concept's hero: white type on a dark pour-over photo" width="800">
+
+A UI and UX exercise, not a client site: a one-page website for an Italian espresso
+bar in Old Montreal, in plain HTML, CSS and JavaScript. A menu slider with tabs,
+dots and swipe, opening hours that highlight today, specials, a gallery, and scroll
+reveals. Bodoni Moda and Inter on a coffee palette with a copper accent.
 
 ---
 
