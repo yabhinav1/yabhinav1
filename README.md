@@ -1,20 +1,27 @@
 ## Abhinav
 
-Full-stack developer in Delhi. First-year CSE at JIMS Greater Noida (GGSIPU).
-Self-taught. Everything below runs in production, and I'm the one who keeps it
-running, which is where most of what I know came from. The one team build is
-marked.
+Full-stack developer in Delhi. I build software and then keep it running: a
+Discord bot in 480+ servers, an offline-first memory for field crews, and the
+productivity app I open every morning. CSE student at JIMS Greater Noida.
+Everything below is in production, and I'm the one who keeps it there.
 
-[Portfolio](https://yabhinav.dpdns.org) · [Email](mailto:yabhinav0011@gmail.com) · Open to internships and freelance work
+[Portfolio](https://yabhinav.dpdns.org) · [LinkedIn](https://www.linkedin.com/in/yabhinav1) · [Email](mailto:yabhinav0011@gmail.com)
 
-**Now:** building out DailyOS, keeping Annie's shards healthy, and looking for a
-first internship.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://yabhinav.dpdns.org/badge/stats.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://yabhinav.dpdns.org/badge/stats.svg?theme=light" />
+  <img alt="Live: servers running Annie and users reached" src="https://yabhinav.dpdns.org/badge/stats.svg" />
+</picture>
+
+**Now:** keeping Annie healthy, and building a Discord bot and dashboard for the GeekRoom community.
 
 | | | |
 |---|---|---|
 | **Annie** | Discord bot that replaces six single-purpose bots. 417 commands, sharded, with a Next.js dashboard. | [annie.monster](https://annie.monster) |
 | **DailyOS** | Personal productivity OS. Eleven modules over one Prisma schema. | [live](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos) |
-| **The Silent Co-Driver** | Scores driver stress from F1 team radio. 3rd place, AI Race Month. | [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing) |
+| **FieldMind** | Offline-first memory for field technicians on Qdrant Edge. Team build. | [source](https://github.com/yabhinav1/fieldmind) |
+| **FieldProof** | Field photos in, verified and report-ready evidence out. NGO media platform on Cloudinary. | [demo](https://fieldproof-kappa.vercel.app) · [source](https://github.com/yabhinav1/fieldproof) |
+| **The Silent Co-Driver** | Scores driver stress from F1 team radio. 3rd place, AI Race Month. Team build. | [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing) |
 
 ---
 
@@ -99,6 +106,39 @@ future caller can reintroduce it by passing an image either.
 
 </details>
 
+### FieldMind · [source](https://github.com/yabhinav1/fieldmind)
+
+<img src="https://raw.githubusercontent.com/yabhinav1/fieldmind/main/docs/img/demo.gif" alt="FieldMind: record notes offline, search and ask, reconnect, resolve a conflict" width="800">
+
+Built on **Qdrant Edge** with Team Compilers. A technician records what they see
+and do. The device remembers it, searches it in about a millisecond with no
+network, answers questions from it with citations, decides by itself what is
+safe to share, and syncs with the fleet through Qdrant Server whenever a link
+exists.
+
+Two Qdrant Edge shards inside the app process, a third for photos; dense vectors
+from `bge-small` on CPU plus built-in BM25. A policy engine classifies every note
+in about 20 ms — pattern detectors, a quantised BERT name model and a semantic
+classifier — and learns from the technician's overrides without ever keeping the
+text. Every change goes to a durable outbox first; uploads are compare-and-swap
+writes; a device that is far behind restores from a shard snapshot instead of
+pulling a diff. Concurrent edits merge field by field, true clashes wait for a
+person, and nothing is overwritten.
+
+### FieldProof · [demo](https://fieldproof-kappa.vercel.app) · [source](https://github.com/yabhinav1/fieldproof)
+
+<img src="https://raw.githubusercontent.com/yabhinav1/fieldproof/main/docs/screenshots/hero.webp" alt="FieldProof comparing a before and an after photo of a plantation site" width="800">
+
+Code Cubicle 2026. An NGO restoring a riverbank takes thousands of photos over
+six months; a donor asks what changed. FieldProof sorts every photo into site and
+phase from GPS and EXIF, flags near-duplicates and impossible dates, turns a
+before/after pair into a plain-language assessment from a vision model that first
+has to agree the two photos show the same spot, searches by meaning, and writes a
+donor-ready report in which every image traces back to its original.
+
+Next.js 16, TypeScript strict, Cloudinary for the media pipeline, Postgres with
+pgvector for search, Gemini for captions and assessments.
+
 ### The Silent Co-Driver · [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing)
 
 **3rd place, AI Race Month · GrandPrix** — two-person team, built in a day.
@@ -151,8 +191,10 @@ loading the session telemetry and using the real `LapStartDate` fixed it.
 
 ### Portfolio · [yabhinav.dpdns.org](https://yabhinav.dpdns.org) · [source](https://github.com/yabhinav1/portfolio)
 
-Server-rendered Node with a `/admin` panel, SQLite via Node's
-built-in `node:sqlite`, no build step, two runtime dependencies.
+Server-rendered Node with an `/admin` panel, libSQL on Turso, no build step and
+no frontend framework. Live counters from Annie, a GitHub contribution heatmap,
+a content-security policy that allows only its own two hashed scripts, and the
+badge at the top of this page.
 
 ---
 
@@ -160,9 +202,10 @@ built-in `node:sqlite`, no build step, two runtime dependencies.
 
 | | |
 |---|---|
-| **Frontend** | Next.js · React · TypeScript · Tailwind · Framer Motion · HTML/CSS · Chart.js |
-| **Backend** | Node · Express · Python · FastAPI · MongoDB · SQLite · Turso · discord.js · Hugging Face |
-| **Infra** | AWS · Oracle Cloud · Vultr · Vercel · Fly.io · Cloudflare · Docker · Linux VPS · DNS · OAuth2 · sharding |
+| **Frontend** | Next.js · React · TypeScript · Tailwind · Framer Motion · Chart.js |
+| **Backend** | Node · Express · Python · FastAPI · MongoDB · Postgres · SQLite / Turso · discord.js |
+| **AI & search** | Hugging Face · Whisper · ONNX · Qdrant · pgvector · Gemini · Cloudinary |
+| **Infra** | AWS · Oracle Cloud · Vultr · Vercel · Fly.io · Cloudflare · Docker · Linux |
 
 ---
 
@@ -174,4 +217,4 @@ built-in `node:sqlite`, no build step, two runtime dependencies.
 
 ---
 
-Open to internships and freelance work — [yabhinav0011@gmail.com](mailto:yabhinav0011@gmail.com)
+Working on something hard? [yabhinav0011@gmail.com](mailto:yabhinav0011@gmail.com)
