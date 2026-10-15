@@ -1,8 +1,9 @@
-## Abhinav
+## Abhinav Yadav
 
-Full-stack developer in Delhi. I build software and then keep it running: a
-Discord bot in 490 servers, an offline-first memory for field crews, and the
-productivity app I open every morning. CSE 1st year at GGSIPU.
+Full-stack developer in Greater Noida. I build software and then keep it running:
+a Discord bot with 72k+ users, an offline-first memory for field crews, and the
+productivity app I open every morning. Founder and lead developer of Annie, Discord
+community manager at Geek Room, and a CSE first-year at JIMS Greater Noida (GGSIPU).
 Everything below is in production, and I'm the one who keeps it there.
 
 [Portfolio](https://yabhinav.dpdns.org) · [LinkedIn](https://www.linkedin.com/in/yabhinav1) · [Email](mailto:yabhinav0011@gmail.com)
@@ -13,14 +14,15 @@ Everything below is in production, and I'm the one who keeps it there.
   <img alt="Live: servers running Annie and users reached" src="https://yabhinav.dpdns.org/badge/stats.svg" />
 </picture>
 
-**Now:** keeping Annie healthy, and building a Discord bot and dashboard for the GeekRoom community.
+**Now:** running Annie with a small team, and managing Geek Room's 3,000-member Discord and the bot that runs it.
 
 | | | |
 |---|---|---|
 | **Annie** | Discord bot that replaces six single-purpose bots. 417 commands, sharded, with a Next.js dashboard. | [annie.monster](https://annie.monster) |
+| **GeekRoom bot** | Runs Geek Room's 3,000-member Discord: case-tracked moderation, escalating automod, contest reminders, a daily problem. Python, with a Next.js dashboard. | [geekroom.dpdns.org](https://geekroom.dpdns.org) |
 | **DailyOS** | Personal productivity OS. Eleven modules over one Prisma schema. | [live](https://dailyos.dpdns.org) · [source](https://github.com/yabhinav1/dailyos) |
 | **FieldMind** | Offline-first memory for field technicians on Qdrant Edge. Team build. | [source](https://github.com/yabhinav1/fieldmind) |
-| **FieldProof** | Field photos in, verified and report-ready evidence out. NGO media platform on Cloudinary. | [demo](https://fieldproof-kappa.vercel.app) · [source](https://github.com/yabhinav1/fieldproof) |
+| **FieldProof** | Field photos in, verified and report-ready evidence out, for NGOs. Top 25 of ~400 at Code Cubicle 6.0. Team build. | [demo](https://fieldproof-kappa.vercel.app) · [source](https://github.com/yabhinav1/fieldproof) |
 | **The Silent Co-Driver** | Scores driver stress from F1 team radio. 3rd place, AI Race Month. Team build. | [source](https://github.com/yabhinav1/silent-co-driver) · [slides](https://docs.google.com/presentation/d/18KpD-N1qZz-IirTM5YQVlFXKfGk4JwXepVmh9bDD5ng/edit?usp=sharing) |
 | **Café de' Mercanti** | UI and UX concept for an Old Montreal café. Hand-built in HTML, CSS and JS. | [live](https://cafe-de-mercanti.vercel.app) · [source](https://github.com/yabhinav1/cafe-de-mercanti) |
 
@@ -30,7 +32,7 @@ Everything below is in production, and I'm the one who keeps it there.
 
 <img src="assets/annie-dashboard.png" alt="Annie's dashboard" width="800">
 
-Closed source. An all-in-one Discord bot that replaces the six single-purpose bots most servers
+Closed source; I founded it and lead the small team that builds it. An all-in-one Discord bot that replaces the six single-purpose bots most servers
 end up running — economy, moderation, music, games, social, community tools.
 
 **417 commands** (313 prefix + 104 slash) across 23 categories · 29 event
@@ -130,7 +132,7 @@ person, and nothing is overwritten.
 
 <img src="https://raw.githubusercontent.com/yabhinav1/fieldproof/main/docs/screenshots/hero.webp" alt="FieldProof comparing a before and an after photo of a plantation site" width="800">
 
-Code Cubicle 2026. An NGO restoring a riverbank takes thousands of photos over
+Code Cubicle 6.0, top 25 of ~400 teams. An NGO restoring a riverbank takes thousands of photos over
 six months; a donor asks what changed. FieldProof sorts every photo into site and
 phase from GPS and EXIF, flags near-duplicates and impossible dates, turns a
 before/after pair into a plain-language assessment from a vision model that first
