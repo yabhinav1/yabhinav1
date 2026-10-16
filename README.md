@@ -6,12 +6,12 @@ productivity app I open every morning. Founder and lead developer of Annie, Disc
 community manager at Geek Room, and a CSE first-year at JIMS Greater Noida (GGSIPU).
 Everything below is in production, and I'm the one who keeps it there.
 
-[Portfolio](https://yabhinav.dpdns.org) · [LinkedIn](https://www.linkedin.com/in/yabhinav1) · [Email](mailto:yabhinav0011@gmail.com)
+[Portfolio](https://yabhinav.is-a.dev) · [LinkedIn](https://www.linkedin.com/in/yabhinav1) · [Email](mailto:yabhinav0011@gmail.com)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://yabhinav.dpdns.org/badge/stats.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://yabhinav.dpdns.org/badge/stats.svg?theme=light" />
-  <img alt="Live: servers running Annie and users reached" src="https://yabhinav.dpdns.org/badge/stats.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://yabhinav.is-a.dev/badge/stats.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://yabhinav.is-a.dev/badge/stats.svg?theme=light" />
+  <img alt="Live: servers running Annie and users reached" src="https://yabhinav.is-a.dev/badge/stats.svg" />
 </picture>
 
 **Now:** running Annie with a small team, and managing Geek Room's 3,000-member Discord and the bot that runs it.
@@ -192,7 +192,7 @@ loading the session telemetry and using the real `LapStartDate` fixed it.
 
 </details>
 
-### Portfolio · [yabhinav.dpdns.org](https://yabhinav.dpdns.org) · [source](https://github.com/yabhinav1/portfolio)
+### Portfolio · [yabhinav.is-a.dev](https://yabhinav.is-a.dev) · [source](https://github.com/yabhinav1/portfolio)
 
 Server-rendered Node with an `/admin` panel, libSQL on Turso, no build step and
 no frontend framework. Live counters from Annie, a GitHub contribution heatmap,
