@@ -1,7 +1,7 @@
 ## Abhinav Yadav
 
 Full-stack developer in Greater Noida. I build software and then keep it running:
-a Discord bot with 72k+ users, an offline-first memory for field crews, and the
+a Discord bot with 74k+ users, an offline-first memory for field crews, and the
 productivity app I open every morning. Founder and lead developer of Annie, Discord
 community manager at Geek Room, and a CSE first-year at JIMS Greater Noida (GGSIPU).
 Everything below is in production, and I'm the one who keeps it there.
